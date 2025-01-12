@@ -102,7 +102,7 @@ class DropeeAPIClient {
             return existingToken;
         }
 
-        this.log('Token not found or expired, login...', 'warning');
+        this.log('Token not found or expired, login. https://t.me/AirdropScript6 ...', 'warning');
         const loginResult = await this.login(initData);
         
         if (loginResult.success) {
@@ -409,7 +409,7 @@ class DropeeAPIClient {
                     prizeMsg = `${prize.id}`;
                 }
                 
-                this.log(`Spin successful! Received: ${prizeMsg}`, 'success');
+                this.log(`Spin successful! Received https://t.me/AirdropScript6: ${prizeMsg}`, 'success');
                 
                 await new Promise(resolve => setTimeout(resolve, 3000));
             } else {
@@ -642,7 +642,7 @@ class DropeeAPIClient {
                             this.log(`Detect ${syncResult.data.energy.available} energy, doing tap...`, 'warning');
                             const tapResult = await this.tap(token, syncResult.data.energy.available);
                             if (tapResult.success) {
-                                this.log(`Tap success | Balance: ${tapResult.data.coins}`, 'success');
+                                this.log(`Tap success | https://t.me/AirdropScript6 | Balance: ${tapResult.data.coins}`, 'success');
                             } else {
                                 this.log(`Tap failed: ${tapResult.error}`, 'error');
                             }
